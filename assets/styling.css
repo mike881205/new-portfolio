@@ -1,0 +1,57 @@
+.content {
+    margin-top: 15%;
+    margin-bottom: 11%;
+    width: 75%;
+    /* box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;; */
+    padding: 5%;
+}
+
+/* .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+} */
+
+.navbar-brand {
+    padding: 1%;
+}
+
+/* .home {
+    margin-left: -10%;
+} */
+
+li {
+    margin: 1%;
+}
+
+
+.header {
+    width: 80%;
+}
+
+p {
+    line-height: 115%;
+}
+
+.footer {
+    height: 5%;
+    margin-top: 5%;
+    background-color: #343a40!important;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: white;
+}
+
+.projectDiv {
+    margin-bottom: 3%;
+}
+
+#imageTxt {
+    position: absolute;
+    width: 250px;
+    top: 90%;
+    height: 10%;
+    text-align: center;
+    background-color: #DA3643;
+    color: white;
+}
