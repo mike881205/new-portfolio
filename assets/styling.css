@@ -1,28 +1,31 @@
+.btn-warning {
+    color: white;
+}
+
+/* .btn-warning h1:hover {
+    color: white;
+} */
+
+.btn-warning:hover {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: white;
+}
+
 .content {
-    margin-top: 15%;
-    margin-bottom: 11%;
+    /* margin-top: 10%;
+    margin-bottom: 5%; */
     width: 75%;
-    /* box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;; */
     padding: 5%;
 }
 
-/* .navbar {
-    padding-top: 0;
-    padding-bottom: 0;
-} */
-
-.navbar-brand {
-    padding: 1%;
+#aboutBtn, #portfolioBtn, #contactBtn {
+    color: white;
 }
-
-/* .home {
-    margin-left: -10%;
-} */
 
 li {
     margin: 1%;
 }
-
 
 .header {
     width: 80%;
@@ -34,9 +37,9 @@ p {
 
 .footer {
     height: 5%;
-    margin-top: 5%;
+    margin: 0;
     background-color: #343a40!important;
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     color: white;

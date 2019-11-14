@@ -1,3 +1,15 @@
+let aboutContent = $("#aboutMe")
+let portfolioContent = $("#portfolio")
+let contactContent = $("#contact")
+let aboutBtn = $("#aboutBtn")
+let portfolioBtn = $("#portfolioBtn")
+let contactBtn = $("#contactBtn")
+let portfolioRow = $("#projects")
+
+let aboutHidden = false
+let portfolioHidden = true
+let contactHidden = true
+
 const portfolio = [
     {
         name: "Word Guess",
@@ -31,9 +43,51 @@ const portfolio = [
     }
 ]
 
-// Dynamically Create Project Links
+function pageLoad () {
+    aboutContent.show()
+    portfolioContent.hide()
+    contactContent.hide()
+    aboutHidden = false
+    portfolioHidden = true
+    contactHidden = true
+}
 
-let portfolioRow = $("#projects")
+window.onload = pageLoad
+
+aboutBtn.on("click", function () {
+    if (aboutHidden = true) {
+        aboutContent.show()
+        aboutHidden = false
+    }
+    portfolioContent.hide()
+    portfolioHidden = true
+    contactContent.hide()
+    contactHidden = true
+})
+
+portfolioBtn.on("click", function () {
+    if (portfolioHidden = true) {
+        portfolioContent.show()
+        portfolioHidden = false
+    }
+    aboutContent.hide()
+    aboutHidden = true
+    contactContent.hide()
+    contactHidden = true
+})
+
+contactBtn.on("click", function () {
+    if (contactHidden = true) {
+        contactContent.show()
+        contactHidden = false
+    }
+    aboutContent.hide()
+    aboutHidden = true
+    portfolioContent.hide()
+    portfolioHidden = true
+})
+
+// Dynamically Create Project Links
 
 function projects() {
 
@@ -63,3 +117,7 @@ function projects() {
 }
 
 projects();
+
+
+
+
