@@ -1,3 +1,4 @@
+let body = $(".body")
 let aboutContent = $("#aboutMe")
 let portfolioContent = $("#portfolio")
 let contactContent = $("#contact")
@@ -43,8 +44,9 @@ const portfolio = [
     }
 ]
 
-function pageLoad () {
+function pageLoad() {
     aboutContent.show()
+    body.css("margin-top", "160px")
     portfolioContent.hide()
     contactContent.hide()
     aboutHidden = false
@@ -54,38 +56,47 @@ function pageLoad () {
 
 window.onload = pageLoad
 
-aboutBtn.on("click", function () {
-    if (aboutHidden = true) {
-        aboutContent.show()
-        aboutHidden = false
-    }
-    portfolioContent.hide()
-    portfolioHidden = true
-    contactContent.hide()
-    contactHidden = true
+$("document").ready(function () {
+
+    aboutBtn.on("click", function () {
+        if (aboutHidden = true) {
+            aboutContent.fadeIn("slow");
+            body.css("margin-top", "160px")
+            aboutHidden = false
+        }
+        portfolioContent.hide()
+        portfolioHidden = true
+        contactContent.hide()
+        contactHidden = true
+    })
+
+    portfolioBtn.on("click", function () {
+        if (portfolioHidden = true) {
+            portfolioContent.fadeIn("slow");
+            body.css("margin-top", "100px")
+            portfolioHidden = false
+        }
+        aboutContent.hide()
+        aboutHidden = true
+        contactContent.hide()
+        contactHidden = true
+    })
+
+    contactBtn.on("click", function () {
+        if (contactHidden = true) {
+            contactContent.fadeIn("slow");
+            body.css("margin-top", "160px")
+            contactHidden = false
+        }
+        aboutContent.hide()
+        aboutHidden = true
+        portfolioContent.hide()
+        portfolioHidden = true
+    })
+
 })
 
-portfolioBtn.on("click", function () {
-    if (portfolioHidden = true) {
-        portfolioContent.show()
-        portfolioHidden = false
-    }
-    aboutContent.hide()
-    aboutHidden = true
-    contactContent.hide()
-    contactHidden = true
-})
 
-contactBtn.on("click", function () {
-    if (contactHidden = true) {
-        contactContent.show()
-        contactHidden = false
-    }
-    aboutContent.hide()
-    aboutHidden = true
-    portfolioContent.hide()
-    portfolioHidden = true
-})
 
 // Dynamically Create Project Links
 
@@ -98,7 +109,8 @@ function projects() {
         let projectImg = $("<img>").attr("src", portfolio[i].image)
             .attr("height", "250px")
             .attr("width", "250px")
-        let portfolioCol = $("<div>").addClass("col-sm-6 shadow text-center d-flex justify-content-center projectDiv")
+            .addClass("shadow")
+        let portfolioCol = $("<div>").addClass("col-sm-4 text-center d-flex justify-content-center projectDiv")
 
         projectLink.on("click", function () {
             event.preventDefault();

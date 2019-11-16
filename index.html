@@ -16,17 +16,18 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt|Signika&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/styling.css">
     <title>Portfolio</title>
 </head>
 
-<body>
+<body class="body">
 
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container header">
-            <div class="btn btn-warning">
-                    <h1>Michael Roberts</h1>
+            <div class="btn btn-danger">
+                    <h1>Mike Roberts</h1>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,27 +37,18 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active home">
-                        <button class="btn btn-outline-danger" id="aboutBtn">
+                        <button class="btn btn-outline-info" id="aboutBtn">
                             About
-                            <!-- <a class="nav-link splash-page" href="index.html">About
-                                <span class="sr-only">(current)</span>
-                            </a> -->
                         </button>
                     </li>
                     <li class="nav-item active">
-                        <button class="btn btn-outline-danger" id="portfolioBtn">
+                        <button class="btn btn-outline-info" id="portfolioBtn">
                             Portfolio
-                            <!-- <a class="nav-link splash-page" href="portfolio.html">Portfolio
-                                <span class="sr-only">(current)</span>
-                            </a> -->
                         </button>
                     </li>
                     <li class="nav-item active">
-                        <button class="btn btn-outline-danger" id="contactBtn">
+                        <button class="btn btn-outline-info" id="contactBtn">
                             Contact
-                            <!-- <a class="nav-link splash-page" href="contact.html">Contact
-                                <span class="sr-only">(current)</span>
-                            </a> -->
                         </button>
                     </li>
                 </ul>
@@ -71,12 +63,12 @@
         <div class="row">
             <div class="col-sm">
                 <div class="row about-title">
-                    <p>About Me</p>
+                    <h2>About Me</h2>
                 </div>
                 <hr>
                 <div class="row">
                     <div>
-                        <img class="img-thumbnail float-left mr-2 mb-1" src="assets/about_image.jpeg">
+                        <img class="img-thumbnail float-left mr-2 mb-1" src="assets/images/about_image.jpeg">
                         <p>
                             Born and raised in South Florida, I earned my bachelor's degree in marketing through the
                             Universtiy of Central Florida. After graduating, I moved to Los Angeles in 2014 and began my
@@ -152,7 +144,7 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" id="messageRow">
                             <div class="col-sm">
                                 <div class="form-group">
                                     <label for="form_message">Message *</label>
