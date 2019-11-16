@@ -6,8 +6,14 @@ body {
 }
 
 h1 {
-    font-weight: bold;
-    font-size: x-large;
+    /* font-weight: bold; */
+    font-size: xx-large;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+.h1Name {
+    width: 50px;
 }
 
 #aboutBtn, #portfolioBtn, #contactBtn, #gitHubBtn, #linkedBtn, #resumeBtn {
@@ -52,6 +58,16 @@ p {
     margin-bottom: 50px;
 }
 
+.linkBtns {
+    margin-bottom: 25px;
+    align-content: center;
+}
+
+#gitHubBtn, #linkedBtn, #resumeBtn {
+    margin-left: 38%;
+    margin-bottom: 5%;
+}
+
 #imageTxt {
     position: absolute;
     width: 250px;
@@ -81,6 +97,10 @@ p {
 #portfolio {
     padding-bottom: 25px;
     padding-top: 40px;
+}
+
+.contactInfo {
+    margin-bottom: 20px;
 }
 
 .footer {

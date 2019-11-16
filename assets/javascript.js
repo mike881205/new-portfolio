@@ -157,6 +157,14 @@ function projects() {
 
 projects();
 
+let linkButtons = $(".linkBtns")
+
+linkButtons.on("click", function () {
+    event.preventDefault();
+    event.stopPropagation();
+    window.open(this.href, '_blank')
+})
+
 
 
 
