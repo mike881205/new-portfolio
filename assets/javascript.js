@@ -109,17 +109,34 @@ $("document").ready(function () {
 function projects() {
 
     for (let i = 0; i < portfolio.length; i++) {
+
         let portfolioCol = $("<div>").addClass("col-sm-4 text-center d-flex justify-content-center projectDiv")
+
         let projectName = $("<p>").text(portfolio[i].name).addClass("align-middle").attr("id", "imageTxt")
         .css("border-radius", "0px 0px 100px 100px")
+
         let projectLink = $("<a>").attr("href", portfolio[i].link)
+
         let projectImg = $("<img>").attr("src", portfolio[i].image)
             .attr("height", "250px")
             .attr("width", "250px")
-            .css("border-radius", "40px")
-            .addClass("btn btn-outline-warning")
+            .css("border-radius", "20px")
+            
+
         let repoLink = $("<a>").attr("href", portfolio[i].repo)
-        let repoText = $("<p>").text("GitHub Repo")
+        let repoBox = $("<div>")
+        let repoText = $("<p>").text("GitHub Repo").addClass("align-middle").attr("id", "repoTxt")
+        // .css("border-radius", "0px 0px 100px 100px")
+
+        portfolioRow.append(portfolioCol)
+
+        portfolioCol.append(projectLink)
+        projectLink.append(projectImg)
+        projectLink.append(projectName)
+
+        portfolioCol.append(repoLink)
+        repoLink.append(repoBox)
+        repoLink.append(repoText)
 
         projectLink.on("click", function () {
             event.preventDefault();
@@ -132,15 +149,6 @@ function projects() {
             event.stopPropagation();
             window.open(this.href, '_blank')
         })
-
-        portfolioRow.append(portfolioCol)
-
-        portfolioCol.append(projectLink)
-        projectLink.append(projectImg)
-        projectLink.append(projectName)
-
-        portfolioCol.append(repoLink)
-        repoLink.append(repoText)
 
 
     }

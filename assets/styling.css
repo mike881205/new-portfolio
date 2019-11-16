@@ -10,11 +10,7 @@ h1 {
     font-size: x-large;
 }
 
-.btn-outline-warning {
-    border: none;
-}
-
-#aboutBtn, #portfolioBtn, #contactBtn {
+#aboutBtn, #portfolioBtn, #contactBtn, #gitHubBtn, #linkedBtn, #resumeBtn {
     font-weight: bold;
     color: white;
 }
@@ -53,18 +49,33 @@ p {
 }
 
 .projectDiv {
-    margin-bottom: 3%;
+    margin-bottom: 50px;
 }
 
 #imageTxt {
     position: absolute;
-    width: 226px;
-    margin-left: 12px;
-    top: 85.75%;
-    height: 12%;
+    width: 250px;
+    margin-left: 0px;
+    top: 92%;
+    height: 7%;
     text-align: center;
-    background-color: #9bcbff;
+    background-color: #ffc107;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-color: antiquewhite;
+}
+
+#repoTxt {
+    position: absolute;
+    border-radius: 25px;
+    width: 226px;
+    margin-left: -238px;
+    top: 105%;
+    height: 7%;
+    text-align: center;
+    background-color: #007bff ;
     color: #ffc107;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #portfolio {
@@ -73,7 +84,7 @@ p {
 }
 
 .footer {
-    height: 35px;
+    height: 36px;
     margin: 0;
     background-color: #343a40!important;
     text-align: center;
