@@ -105,11 +105,13 @@ function projects() {
     for (let i = 0; i < portfolio.length; i++) {
 
         let projectName = $("<p>").text(portfolio[i].name).addClass("align-middle").attr("id", "imageTxt")
+        .css("border-radius", "0px 0px 100px 100px")
         let projectLink = $("<a>").attr("href", portfolio[i].link)
         let projectImg = $("<img>").attr("src", portfolio[i].image)
             .attr("height", "250px")
             .attr("width", "250px")
-            .addClass("shadow")
+            .css("border-radius", "40px")
+            .addClass("btn btn-outline-warning")
         let portfolioCol = $("<div>").addClass("col-sm-4 text-center d-flex justify-content-center projectDiv")
 
         projectLink.on("click", function () {

@@ -10,14 +10,8 @@ h1 {
     font-size: x-large;
 }
 
-.btn-warning {
-    color: white;
-}
-
-.btn-warning:hover {
-    background-color: #ffc107;
-    border-color: #ffc107;
-    color: white;
+.btn-outline-warning {
+    border: none;
 }
 
 #aboutBtn, #portfolioBtn, #contactBtn {
@@ -64,8 +58,9 @@ p {
 
 #imageTxt {
     position: absolute;
-    width: 250px;
-    top: 90%;
+    width: 226px;
+    margin-left: 12px;
+    top: 88%;
     height: 10%;
     text-align: center;
     background-color: #343a40;
