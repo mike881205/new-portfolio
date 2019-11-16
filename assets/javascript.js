@@ -15,31 +15,37 @@ const portfolio = [
     {
         name: "Word Guess",
         link: "https://mike881205.github.io/Word-Guess-Game/",
+        repo: "https://github.com/mike881205/Word-Guess-Game",
         image: "assets/images/word-guess.jpg"
     },
     {
         name: "Ring Collector",
-        link: "https://mike881205.github.io/unit-4-game/",
+        link: "https://mike881205.github.io/ring-collector/",
+        repo: "https://github.com/mike881205/ring-collector",
         image: "assets/images/ring-collector.jpg"
     },
     {
         name: "TMNT Trivia",
         link: "https://mike881205.github.io/TriviaGame/",
+        repo: "https://github.com/mike881205/TriviaGame",
         image: "assets/images/trivia.jpg"
     },
     {
         name: "Gif-Tastic",
         link: "https://mike881205.github.io/Giphy_Homework/",
+        repo: "https://github.com/mike881205/Giphy_Homework",
         image: "assets/images/gif.gif"
     },
     {
         name: "Train Scheduler",
         link: "https://mike881205.github.io/Train-Scheduler/",
+        repo: "https://github.com/mike881205/Train-Scheduler",
         image: "assets/images/train.png"
     },
     {
         name: "Space BnB",
         link: "https://onieronaut.github.io/Project1/",
+        repo: "https://github.com/onieronaut/Project1",
         image: "assets/images/space-bnb.jpg"
     }
 ]
@@ -103,7 +109,7 @@ $("document").ready(function () {
 function projects() {
 
     for (let i = 0; i < portfolio.length; i++) {
-
+        let portfolioCol = $("<div>").addClass("col-sm-4 text-center d-flex justify-content-center projectDiv")
         let projectName = $("<p>").text(portfolio[i].name).addClass("align-middle").attr("id", "imageTxt")
         .css("border-radius", "0px 0px 100px 100px")
         let projectLink = $("<a>").attr("href", portfolio[i].link)
@@ -112,7 +118,8 @@ function projects() {
             .attr("width", "250px")
             .css("border-radius", "40px")
             .addClass("btn btn-outline-warning")
-        let portfolioCol = $("<div>").addClass("col-sm-4 text-center d-flex justify-content-center projectDiv")
+        let repoLink = $("<a>").attr("href", portfolio[i].repo)
+        let repoText = $("<p>").text("GitHub Repo")
 
         projectLink.on("click", function () {
             event.preventDefault();
@@ -120,10 +127,20 @@ function projects() {
             window.open(this.href, '_blank')
         })
 
+        repoLink.on("click", function () {
+            event.preventDefault();
+            event.stopPropagation();
+            window.open(this.href, '_blank')
+        })
+
         portfolioRow.append(portfolioCol)
+
         portfolioCol.append(projectLink)
         projectLink.append(projectImg)
         projectLink.append(projectName)
+
+        portfolioCol.append(repoLink)
+        repoLink.append(repoText)
 
 
     }
