@@ -47,6 +47,12 @@ const portfolio = [
         link: "https://onieronaut.github.io/Project1/",
         repo: "https://github.com/onieronaut/Project1",
         image: "assets/images/space-bnb.jpg"
+    },
+    {
+        name: "Liri Bot",
+        link: "https://github.com/mike881205/liri-node-app",
+        repo: "https://github.com/mike881205/liri-node-app",
+        image: "assets/images/nodeImg.png"
     }
 ]
 
