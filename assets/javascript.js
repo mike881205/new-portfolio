@@ -58,7 +58,7 @@ const portfolio = [
         name: "Bamazon",
         link: "https://github.com/mike881205/bamazon",
         repo: "https://github.com/mike881205/bamazon",
-        image: "assets/images/liri.jpg"
+        image: "assets/images/bamazon.png"
     }
 ]
 
