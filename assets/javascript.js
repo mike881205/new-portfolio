@@ -52,7 +52,13 @@ const portfolio = [
         name: "Liri Bot",
         link: "https://github.com/mike881205/liri-node-app",
         repo: "https://github.com/mike881205/liri-node-app",
-        image: "assets/images/nodeImg.png"
+        image: "assets/images/liri.jpg"
+    },
+    {
+        name: "Bamazon",
+        link: "https://github.com/mike881205/bamazon",
+        repo: "https://github.com/mike881205/bamazon",
+        image: "assets/images/liri.jpg"
     }
 ]
 
