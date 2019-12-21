@@ -49,13 +49,13 @@ const portfolio = [
         image: "assets/images/space-bnb.jpg"
     },
     {
-        name: "Liri Bot",
+        name: "Liri Bot (Terminal App)",
         link: "https://github.com/mike881205/liri-node-app",
         repo: "https://github.com/mike881205/liri-node-app",
         image: "assets/images/liri.jpg"
     },
     {
-        name: "Bamazon",
+        name: "Bamazon (Terminal App)",
         link: "https://github.com/mike881205/bamazon",
         repo: "https://github.com/mike881205/bamazon",
         image: "assets/images/bamazon.png"
