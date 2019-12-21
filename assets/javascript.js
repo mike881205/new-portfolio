@@ -63,7 +63,7 @@ const portfolio = [
     {
         name: "Friend Finder",
         link: "https://obscure-castle-87644.herokuapp.com/",
-        repo: "https://github.com/mike881205/bamazon",
+        repo: "https://github.com/mike881205/friendFinder",
         image: "assets/images/friendFinder.jpeg"
     }
 ]
