@@ -65,6 +65,12 @@ const portfolio = [
         link: "https://obscure-castle-87644.herokuapp.com/",
         repo: "https://github.com/mike881205/friendFinder",
         image: "assets/images/friendFinder.jpeg"
+    },
+    {
+        name: "Eat-Da-Burger!",
+        link: "https://agile-everglades-34485.herokuapp.com/",
+        repo: "https://github.com/mike881205/burger",
+        image: "assets/images/burger.jpg"
     }
 ]
 
