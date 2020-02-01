@@ -44,8 +44,8 @@ const portfolio = [
     },
     {
         name: "Space BnB",
-        link: "https://onieronaut.github.io/Project1/",
-        repo: "https://github.com/onieronaut/Project1",
+        link: "https://onieronaut.github.io/SpaceBnB/",
+        repo: "https://github.com/onieronaut/SpaceBnB",
         image: "assets/images/space-bnb.jpg"
     },
     {
