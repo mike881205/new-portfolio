@@ -82,7 +82,7 @@ const portfolio = [
         name: "Star Wars News Scraper",
         link: "https://news-scraperapp.herokuapp.com/",
         repo: "https://github.com/mike881205/newsScraper",
-        image: "assets/images/star-wars-news-.jpg"
+        image: "assets/images/star-wars-news.jpg"
     }
 ]
 
