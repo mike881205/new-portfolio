@@ -83,6 +83,12 @@ const portfolio = [
         link: "https://news-scraperapp.herokuapp.com/",
         repo: "https://github.com/mike881205/newsScraper",
         image: "assets/images/star-wars-news.jpg"
+    },
+    {
+        name: "Memory Game",
+        link: "https://immense-castle-81770.herokuapp.com/",
+        repo: "https://github.com/mike881205/click_game",
+        image: "assets/images/brain.jpg"
     }
 ]
 
